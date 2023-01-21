@@ -141,7 +141,9 @@ REST_FRAMEWORK = {
     'DEFAULT_THROTTLE_RATES': {
         'user': '10000/day',  # Лимит для UserRateThrottle
         'anon': '1000/day',  # Лимт для AnonRateThrottle
-    }
+    },
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 2,
 }
 
 SIMPLE_JWT = {
